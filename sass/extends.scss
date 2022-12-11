@@ -1,0 +1,18 @@
+.btn1 {
+    font-size: 25px;
+       color: rgb(0, 60, 255); ;
+       padding: 1rem;
+       border-radius: 20px;
+    }
+    
+.btn2 {
+    @extend .btn1;
+    }
+    
+.btn3 {
+    @extend .btn1;
+    }
+    
+.btn4 {
+     @extend .btn1;
+    }    
