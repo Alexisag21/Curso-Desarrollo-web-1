@@ -30,5 +30,5 @@ if (visitasUsuario <=3) {
 
 let dia = 12;
 const suma= dia+visitasUsuario;
-alert("tu numero de la suerte es " + suma);
+alert("Tu numero de la suerte es el " + suma);
 
