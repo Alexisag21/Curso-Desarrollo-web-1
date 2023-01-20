@@ -24,40 +24,19 @@ comparar (5, 2);
 
 const carritodeCompras = [];
 
-console.log (carritodeCompras); 
+const agregarAlCarrito = (producto, carrito) => {
+    carrito.push(producto);
+    consoile.log("se agregó con exito el producto");
+}
 
-const Comida1 = {
-    nombre: "mole poblano",
-    precio:350,
-    detalle: "el mejor mole de puebla",
- }
+const comidas = [
+     {id 1, nombre: "mole poblano", precio:350},
+     {id 2, nombre: "mole poblano", precio:350},
+     {id 3, nombre: "chiles en nogada", precio: 400},
+     {id 4, nombre: "pozole", precio: 250}
+];
 
- const Comida2 = {
-    nombre: "pizza",
-    precio: 200,
-    detalle: "te sentirás en italia"
- }
+for (let i= 0; i < comidas.length; i++) {
+    console.log ("Array completo. " , comidas[i]);
+}
 
- const Comida3 = {
-    nombre: "chiles en nogada",
-    precio: 400,
-    detalle: "Aprovecha nuestra promoción de 2x1"
- }
-
- const Comida4 = {
-    nombre: "pozole",
-    precio: 250,
-    detalle:"el mejor pozole de puebla"
- }
-
- carritodeCompras.push(Comida1);
- console.log (carritodeCompras);
-
- carritodeCompras.push(Comida2);
- console.log (carritodeCompras);
-
- carritodeCompras.push(Comida3);
- console.log (carritodeCompras);
-
- carritodeCompras.push(Comida4);
- console.log (carritodeCompras);
