@@ -1,106 +1,77 @@
-const saludar = () => console.log ("hola usuario");
+const contadorCarrito = document.getElementById (“contadorCarrito”);
+const contenidoCarrito = document.getElementById (“contenidoCarrito”);
 
-saludar ();
-
-function sumarParametros (usuario5, usuario3, usuario2) {
-const resultado = usuario5 + usuario3 + usuario2;
-console.log (resultado);
-}
-
-sumarParametros(5,3,2) 
-
-function comparar (usuario5, usuario2) {
-
-    if(usuario5>usuario2){
-        console.log (" cliente muy satisfecho");  
-    } else if (usuario1 === usuario2) {
-        console.log ("Cliente satisfecho");
-    } else {
-        console.log ("Cliente insatisfecho");
-    }
-}
-
-comparar (5, 2);
-
-const carritodeCompras = [];
-
-const agregarAlCarrito = (producto, carrito) => {
-    carrito.push(producto);
-    consoile.log("se agregó con exito el producto");
-}
-
+/*array de productos*/
 const comidas = [
-     {id 1, nombre: "mole poblano", precio:350},
-     {id 2, nombre: "mole poblano", precio:350},
-     {id 3, nombre: "chiles en nogada", precio: 400},
-     {id 4, nombre: "pozole", precio: 250}
+{ id: 1 , nombre: “Mole poblano”, precio: 300},
+{ id: 2, nombre: “Cemita”, precio: 150},
+{ id: 3, nombre: “Molotes”, precio: 120},
+{ id: 4, nombre: “Pizza”, precio: 180},
+{ id: 5, nombre: “Chiles en nogada”, precio: 500},
+{ id: 6, nombre: “Pozole”, precio:300},
+{ id: 7, nombre: “Chalupas”, precio: 100},
+{ id: 8, nombre: “Hamburguesa”, precio: 150},
 ];
 
-for (let i= 0; i < comidas.length; i++) {
-    console.log ("Array completo. " , comidas[i]);
+/*Array de carrito de compras*/ 
+Const carrito = [];
+
+Función agregar al carrito
+const agregarAlCarrito = (id, carrito) => {
+     const productoSeleccionado = comidas.find  (item => item.id === id);
+     carrito.push(producto);
+     console.log(“El producto se agregó con exito”, carrito);
+} 
+
+/*Contador de carrito*/
+const agregarContadorCarrito = () => {
+if (carrito.length !== 0) {
+   contadorCarrito.classList.add(“contadorCarrito”);
+   contador.Carrito.textContent = carrito.lenght
+   }
 }
 
-let edadUsuario = parseInt(prompt("¿cuantos años tienes?"));
-alert(`Hola, ${nombreUsuario} tienes ${edadUsuario} años`);
+/*Productos en DOM*/
 
-let edad = "30"
+Comidas.forEach(comida => {
+     const div = document.createElement(“div”);
+    div.innerHTML =
 
-switch (edad) {
-    case "25":
-        console.log(" Restaurante Aguilar te da el 10% de descuento en tu siguiente salida al cine ")
-        break;
-    case "20":
-            console.log(" Restaurante Aguilar te da el 50% de descuento en tu siguiente salida al cine ")
-            break;
-    case "18":
-            console.log(" Restaurante Aguilar te regala una entrada para ir al cine ")
-                break;
-    default:
-        console.log("Suerte para la proxima")
-        break;
-}
+contenedorProductos.appendChild(div);
+const botonAgregarCarrito = document.getElementById(`agregarCarrito${comida.id}`);
+botonAgregarCarrito.addEventListener (“click”, ()=> {
+    agregarAlCarrito(comida.id, carrito); 
+   agregarContadorCarrito();
+    actualizarCarrito();
+    })
+})
 
-Comidas.forEach (comida => {
-    Cosole.log (comida.nombre, comida.precio)
-    });
+const actualizarCarrito =  () => {
+    ContenidoCarrito.innerHTML = “”;
+    carrito.forEach (comida => {  
+    const div = document.createElement(“div”);
+    div.classList.add (“productosEnCarrito”)
+   div.innerHTML =
+ `
+<P>${comida.cantidad}</p>
+<P>${comida.nombre}</p>
+<P>Precio: $${comida.precio}</p>
+`
+   contenidoCarrito,appendChild(div);
+     })
+} 
 
-    
-Const ComidasFiltrado = comidas.filter (item => item.precio > 200);
-    Console.log (“Comidas más caras”, comidasFiltrado);
-    
-Const ComidasFiltrado = comidas.filter (item => item.precio < 200);
-    Console.log (“Comidas más económicas”, comidasFiltrado);
-    
-Const FiltradoporNombre = comidas.filter (item => item.nombre.includes (“P”));
-    Console.log (“Comidas que incluyen P son: ”, FiltradoporNombre);
+
 
 
     
-Const comidaSeleccionada = comidas.find(e=> e.id === id);
-    Console.log (“El producto elegido es: ”,comidaSeleccionada);
-    
-Const comidaSeleccionada = comidas.find(e=> e.nombre === id);
-    Console.log (“El producto elegido es: ”,comidaSeleccionada);
-    
-Const comidaSeleccionada = comidas.find(e=> e.id === id);
-    Console.log (“El producto elegido es: ”,comidaSeleccionada);
-    
- Const comidaSeleccionada = comidas.find(e=> e.nombre === id);
-    Console.log (“El producto elegido es: ”,comidaSeleccionada);
-    
+    /*Recuperar datos de formulario*/
 
-Const nombre = comidas.some (elemento=> elemento.nombre === “Sopa”);
-    Console.log (“¿El producto existe?”, nombre);
-
-
- Const ordenAlfabetico = comidas.sort ((item1,item2)=> {
-        If (item1.nombre === item2.nombre) {
-        return 0
-        } else if (item1.nombre < item2.nombre) {
-        return -1;
-        } else {
-        return 1
-        }
-        });
-        
-    
+.Document.querySelector(“form”)
+.addEventListener(“submit” , e => {
+e.preventDefault()
+const data = Object.fromEntries (
+new FormData(e.target)
+)
+alert(JSON.stringify(data))
+})

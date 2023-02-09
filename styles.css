@@ -1,182 +1,453 @@
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #93cfdb;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #000a0c;
 }
 
 .navbar {
-    display: flex;
-    gap: 1rem;
-    margin: 10px;
-    justify-content: end;
-   }
+  display: flex;
+  gap: 1rem;
+  margin: 10px;
+  justify-content: end;
+  color: aliceblue;
+}
 
- .navbar li {
-border-radius: 8px;    
-flex: 1;
-flex-grow: 0;
-flex-shrink: 1;
-flex-basis: 0;
+.navbar li {
+  border-radius: 8px;
+  flex: 1;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 0;
 
-border: 8px;
-border-style: solid;
-background-color: #0d087d;
-   }
+  border: 8px;
+  border-style: solid;
+  background-color: orange;
+
+}
 
 h1 {
- color: aliceblue;
-background-color: #0d087d;
- text-align: center;
- font-size: 25px;
- border-style: solid; 
+  color: #000a0c;
+  background-color: orange;
+  border-color: #FFFFFF;
+  text-align: center;
+  font-size: 40px;
+  border-style: solid;
+  font-weight: bold;
 }
 
 
-h2{
-    color: black;
-    font-size: 20px;
+h2 {
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 h3 {
-    font-size: 20px;
-   }
+  font-size: 20px;
+}
+
+p {
+  color: #000a0c;
+  background-color: orange;
+  border-color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  border-style: solid;
+  font-weight: bold;
+}
+
+
+a {
+  color: #000a0c;
+  background-color: orange;
+  text-align: center;
+  font-weight: bold;
+}
+
+.text1 {
+  color: #000a0c;
+  background-color: aliceblue;
+  text-align: center;
+  font-size: 20px;
+  border-style: solid;
+  font-weight: bold;
+}
+
+.text2 {
+  color: #000a0c;
+  background-color: orange;
+  text-align: center;
+  font-size: 25px;
+  border-style: solid;
+  font-weight: bold;
+}
+
+.text3 {
+  color: #000a0c;
+  background-color: orange;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.text4 {
+  color: #000a0c;
+  background-color: orange;
+  text-align: center;
+  font-size: 20 px;
+  border-style: solid;
+  font-weight: bold;
+}
+
+.iconos {
+  background-color: orange;
+  font-size: 50px;
+}
+
+.carrito11 {
+  background-color: orange;
+  font-size: 50px;
+  position: absolute;
+}
+
+.tituloSeccionComidas {
+  color: #000a0c;
+  background-color: #DFDFA1;
+  text-align: center;
+  font-size: 40px;
+  border-style: solid;
+  font-weight: bold;
+}
+
+main .contenedorGeneralBienvenida {
+  height: 90vh;
+}
+
+main .contenedorGeneralBienvenida .contenedorImgTitulo {
+  position: relative;
+}
+
+main .contenedorGeneralBienvenida .contenedorImgTitulo .contenedorImgBienvenida {
+  opacity: 0.15;
+  display: flex;
+}
+
+main .contenedorGeneralBienvenida .contenedorImgTitulo .contenedorImgBienvenida img {
+  width: 50%;
+}
+
+main .contenedorGeneralBienvenida .contenedorImgTitulo .tituloBienvenida {
+  position: absolute;
+  top: 30%;
+  color: #FFFFFF;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+}
+
+main .contenedorGeneralBienvenida .contenedorImgTitulo .tituloBienvenida span {
+  display: block;
+  font-size: 80px;
+}
+
+main .contenedorGeneralBienvenida .contenedorImgTitulo h2 {
+  position: absolute;
+  top: 60%;
+  color: orange;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+}
+
+main .contenedorGeneralBienvenida .contenedorImgTitulo .prueba {
+  position: absolute;
+  top: 80%;
+  color: #FFFFFF;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  width: 100%;
+}
+
+main .contenedorGeneralBienvenida .contenedorImgTitulo .prueba a {
+  background-color: #FFFFFF;
+  padding: 1rem;
+  border-radius: 10px;
+  color: ;
+  text-decoration: none;
+}
 
 #mptP {
-    width: 100rem;
-    height: 50rem;
- }
+  width: 100rem;
+  height: 50rem;
+}
 
 #moleIndex {
-   width: 10rem;
-   height: 15rem;
+  width: 10rem;
+  height: 15rem;
 }
 
 #pizzaIndex {
-    width: 10rem;
-    height: 15rem;
- }
+  width: 10rem;
+  height: 15rem;
+}
 
- #chilesnIndex {
-    width: 10rem;
-    height: 15rem;
- }
+#chilesnIndex {
+  width: 10rem;
+  height: 15rem;
+}
 
- #pozoleIndex {
-    width: 10rem;
-    height: 15rem;
- }
+#pozoleIndex {
+  width: 10rem;
+  height: 15rem;
+}
 
 #sucursalCentro {
-    width: 20rem;
-    height: 20rem;
-    border-radius: 50%;
- }
-
- #sucursalSur {
-    width: 20rem;
-    height: 20rem;
-    border-radius: 50%;
-}
-p {
-    color: aliceblue;
-    background-color: #0d087d;
-    text-align: center;
-    font-size: 20px;
-    border-style: solid;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
 }
 
-.iconoFacebook {
-    font-size: 50px;
+#sucursalSur {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
 }
 
-.iconoInstagram {
-    font-size: 50px;
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+  }
 }
 
-@media only screen and (min-width: 
-320px) and (max-width: 480px) {
-    .navbar {
-        flex-direction: column;
-    }
-   } 
+@media only screen and (min-width: 764px) and (max-width: 1024px) {
+  .navbar {
+    color: rgb(157, 179, 228);
+  }
+}
 
-@media only screen and (min-width: 
-764px) and (max-width: 1024px){
-    .navbar {
-        color: aqua;
-    }
-   } 
-   
-   .card {
-    width: 11.875em;
-    height: 16.5em;
-    box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
-    cursor: pointer;
-    transition: all 120ms;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #fff;
-    padding: 0.5em;
-    padding-bottom: 3.4em;
-   }
-   
-   .card::after {
-    content: "Add to Cart";
-    padding-top: 1.25em;
-    padding-left: 1.25em;
-    position: absolute;
-    left: 0;
-    bottom: -60px;
-    background: #0d087d;
-    color: #fff;
-    height: 2.5em;
-    width: 100%;
-    transition: all 80ms;
-    font-weight: 600;
-    text-transform: uppercase;
-   }
-   
-   .card .title {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9em;
-    position: absolute;
-    left: 0.625em;
-    bottom: 1.875em;
-    font-weight: 400;
-   }
-   
-   .card .price {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 0.9em;
-    position: absolute;
-    left: 0.625em;
-    bottom: 0.625em;
-   }
-   
-   .card:hover::after {
-    bottom: 0;
-   }
-   
-   .card:active {
-    transform: scale(0.98);
-   }
-   
-   .card:active::after {
-    content: "Added !";
-    height: 3.125em;
-   }
-   
-   .text {
-    max-width: 55px;
-   }
-   
-   .image {
-    background: rgb(241, 241, 241);
-    width: 100%;
-    height: 100%;
-    display: grid;
-    place-items: center;
-   }
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  body {
+    background-color: rgb(40, 54, 175);
+  }
+
+  #logoIndex {
+    width: 2rem;
+  }
+
+  .menuNavegacion {
+    display: block;
+  }
+
+}
+
+
+.card1 {
+
+  width: 550px;
+  height: 450px;
+  border-radius: 20px;
+  background: #f5f5f5;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  left: 650px;
+}
+
+.card-details {
+  color: black;
+  height: 100%;
+  gap: .5em;
+  display: grid;
+  place-content: center;
+}
+
+.card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #f80000;
+  color: #fff;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+
+
+
+
+/*Hover*/
+.card:hover {
+  border-color: #f80000;
+  box-shadow: 0 12px 26px 0 #f80000;
+}
+
+.card:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+
+.card {
+  width: 13em;
+  height: 18.5em;
+  margin-left: 100px;
+  margin-block-end: 50px;
+  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 120ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: orange;
+  padding: 0.5em;
+  padding-bottom: 3.4em;
+  margin-block: 16px;
+}
+
+.card::after {
+  content: "Añadir";
+  padding-top: 1.25em;
+  padding-left: 4em;
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  background-color: #000a0c;
+  color: #fff;
+  border-color: orange;
+  height: 2.5em;
+  width: 100%;
+  transition: all 80ms;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.card .title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  ;
+  color: #000a0c;
+  background-color: orange;
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 1.875em;
+  font-weight: bold;
+}
+
+.card .price {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #000a0c;
+  background-color: orange;
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 0.625em;
+}
+
+.card:hover::after {
+  bottom: 0;
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+.card:active::after {
+  content: "Added !";
+  height: 3.125em;
+}
+
+.text {
+  max-width: 55px;
+}
+
+.image {
+  background: rgb(241, 241, 241);
+  width: 120%;
+  height: 115%;
+  display: grid;
+  place-items: center;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.form {
+  width: 70em;
+  display: flex;
+  margin-left: 350px;
+  flex-direction: column;
+  gap: 10px;
+  background: #FFFFFF;
+  padding: 20px;
+  border: 1px solid #000a0c;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.form input {
+  height: 25px;
+  outline: none;
+  border: 2px solid #000a0c;
+  background: transparent;
+  padding: 20px 10px;
+  border-radius: 5px;
+  transition: .5s;
+  color: white;
+  font-size: 20px;
+}
+
+.form input:focus {
+  background: orange;
+}
+
+
+button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #000a0c;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: orange;
+  box-shadow: 0px 15px 20px #000a0c;
+  color: #000a0c;
+  transform: translateY(-5px);
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+      minmax (
+        150px,
+        1fr)) 
+}
