@@ -38,14 +38,12 @@
                       <a href="./Comprar.html">Comprar</a>
                       </a>
                     </li>
-                    <li class="nav-item">
-                      <a href="./Contacto.html">Contacto</a>
-                    </li>
                 </div>
                 </div>
                 <div class="carrito11" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
                     aria-controls="offcanvasRight">
                     <iconify-icon class="iconoCarrito" icon="material-symbols:shopping-cart-outline"></iconify-icon>
+                    <p id="contadorCarrito" ></p>
                 </div>                      
                   </div>  
              </nav>
@@ -61,7 +59,7 @@
                     <h5 class="offcanvas-title" id="offcanvasRightLabel">Productos Seleccionados</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body"></div>
+                <div class="offcanvas-body" id="contenidoCarrito" ></div>
             </div>
             </section>
             <h1>NUESTROS PRODUCTOS</h1>
@@ -72,21 +70,25 @@
                   <img id="moleIndex" src="./img/Mole-poblano.jpg" alt="mole poblano" srcset="">
                     <h2 class="title">Mole poblano</h2>
                     <span class="price">$300</span>
+                    <button>hola mundo</button>
                   </div></div>
                 <div class="col"><div class="card">
                   <img id="moleIndex" src="./img/cemitas7.jpg" alt="cemitas" srcset="">
                     <h2 class="title">Cemita</h2>
                     <span class="price">$150</span>
+                    <button class="button">hola</button>
                   </div></div>
                 <div class="col"><div class="card">
                   <img id="moleIndex" src="./img/6molotes.jpg" alt="molotes" srcset="">
                     <h2 class="title">Molotes</h2>
                     <span class="price">$120</span>
+                    <button>hola mundo</button>
                   </div></div>
                 <div class="col"><div class="card">
                   <img id="moleIndex" src="./img/4pizza.jpg" alt="pizza" srcset="">
                     <h2 class="title">Pizza</h2>
                     <span class="price">$180</span>
+                    <button>hola mundo</button>
                   </div></div>
               </div>
             </div>
@@ -96,25 +98,50 @@
                   <img id="moleIndex" src="./img/chilesn.jpg" alt="chiles en nogada" srcset="">
                     <h2 class="title">Chiles en nogada</h2>
                     <span class="price">$500</span>
+                    <button>hola mundo</button>
                   </div></div>
                 <div class="col"><div class="card">
                   <img id="moleIndex" src="./img/3pozole.jpg" alt="pozole" srcset="">
                     <h2 class="title">Pozole</h2>
                     <span class="price">$300</span>
+                    <button>hola mundo</button>
                   </div></div>
                 <div class="col"><div class="card">
                   <img id="moleIndex" src="./img/5chalupas.jpg" alt="chalupas" srcset="">
                     <h2 class="title">Chalupas</h2>
                     <span class="price">$100</span>
+                    <button>hola mundo</button>
                   </div></div>
                 <div class="col"><div class="card">
                   <img id="moleIndex" src="./img/8hamburguesas.jpg" alt="hamburguesa" srcset="">
                     <h2 class="title">Hamburguesa</h2>
                     <span class="price">$150</span>
+                    <button>hola mundo</button>
                   </div></div>
               </div>
             </div>
             </main>
+            <section>
+                <form class="form">
+                  <h2>RESTAURANTE AGUILAR TE INVITA A AGREGAR TUS DATOS EN CASO DE UNA RESERVACION</h2>
+                  <label for="nombre">Ingresa tu nombre</label>
+                  <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" />
+    
+                  <label for="apellidos">Ingresa tus apellidos</label>
+                  <input type="text" name="apellidos" id="apellidos" placeholder="Escribe tus Apellidos" />
+                  <form>
+                    <label for="">Ingresa dia de reservación</label>
+                    <input type="date" name="Ingresa tu fecha deseada" id="fecha">
+                    <form>
+                      <label for="">Ingresa el horario de reservación</label>
+                      <input type="time" name="Ingresa el horario deseado" id="horario">
+                      <form>
+                        <label for="nombre">Ingresa tu número teléfonico</label>
+                        <input type="number" name="Ingresa tu número" placeholder="Ingresa tu número">
+                        <form>
+                          <button>Enviar datos</button>
+                        </form>
+            </section>
             <footer>
                 <p>RESTAURANTE AGUILAR-TODOS LOS DERECHOS RESERVADOS</p>
                 <a href="https://www.facebook.com/">

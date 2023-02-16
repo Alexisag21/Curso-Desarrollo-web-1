@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title> RETROFÚTBOL </title>
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+	    <link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+	<header>
+Aquí inserta la parte del menú desde boostra(ver si es necesario) 
+	        <nav class="navbar navbar-expand-md">
+	          <div class="container-fluid contenedorNavbar">
+	              <div>
+	                  <a class="navbar-brand" href="./index.html">
+	                      <img src="g" alt="Logo" class="logo" >
+	                  </a>
+	              </div>
+	              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+	                  aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+	                  <span class="navbar-toggler-icon"></span>
+	              </button>
+	              <nav class="navbar navbar-expand-lg bg-body-tertiary">
+	                <nav class="navbar bg-body-tertiary">
+	                  <div class="container">
+	                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	                      <li class="nav-item">
+	                        <a href="./index.html">Inicio</a>
+	                      </li>
+	                      <li class="nav-item">
+	                        <a href="./Quienes somos.html">¿Quienes somos?</a>
+	                      </li>
+	                      <li class="nav-item dropdown">
+	                        <a href="./Comprar.html">Comprar</a>
+	
+	                      </li>
+	                      <li class="nav-item">
+	                        <a href="./Contacto.html">Contacto</a>
+	                      </li>
+	                    </ul>
+	                  </div>
+	                 
+	                  <div class="carrito11" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+	                      aria-controls="offcanvasRight">
+	                      <iconify-icon class="iconoCarrito" icon="material-symbols:shopping-cart-outline"></iconify-icon>
+<p id= “contadorCarrito”></p>
+	                  </div>                           
+	              </div>
+	          </div>
+	      </nav>
+	  </header>
+   
+	  <main class="mt-5">
+	      <section class="contenedorGeneralBienvenida">
+	          <div class="contenedorImgTitulo">
+	              <div class="contenedorImgBienvenida">
+	                  <img src="./img/Portada1.jpg" alt="Por1">
+	                  <img src="./img/m86.jpg" alt="por2">
+	              </div>
+	              <h1  class="tituloBienvenida"><span>BIENVENIDOS A RETROFÚTBOL</span>
+	              </h1>
+	              <h2>Lo mejor del pasado en tu presente</h2>
+	          </div>
+<section>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header mt-2">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Productos Seleccionados</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+                </div>
+                <div class="offcanvas-body" id=contenidoCarrito></div>
+            </div>
+            </section>
+            <h2>NUESTROS PRODUCTOS</h2>
+            <section class="contenedorProductos" id="contenedorProductos">
+</section>
+
+</section>
+
+<section> 
+<button id=”botonAPI”> Próximos productos</button>
+<div id= "ContenedorProductosNuevos"></div>
+</section>
+
+
+	          <section>
+                        <div class="img1">
+                          <img src="./img/Cr1.jpg" class="Car" alt="Cr1">
+                        </div>
+                    <form class="form">
+                      <h2>¿TIENES DUDAS?...DEJA TUS DATOS Y UN ASESOR TE CONTACTARÀ </h2>
+                      <label for="nombre">Nombre</label>
+                      <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" />
+        
+        
+                      <label for="apellidos">Apellidos</label>
+                      <input type="text" name="apellidos" id="apellidos" placeholder="Escribe tus Apellidos" />
+                      <form>
+                        <label for="">Ingresa día para llamarte</label>
+                        <input type="date" name="" id="">
+                        <form>
+                          <label for="">Ingresa el horario a tu conveniencia</label>
+                          <input type="time" name="" id="">
+                          <form>
+                            <label for="nombre">Ingresa tu número teléfonico</label>
+                            <input type="number" name="" placeholder="Ingresa tu número">
+                            <form>
+                              <button>Enviar datos</button>
+                            </form>
+                  </div>
+                </div>
+              </div>
+	          </section>
+	    </main>
+	        <footer>
+	            <p> RETROFÚTBOL ---TODOS LOS DERECHOS RESERVADOS</p>
+	            <a href="https://www.facebook.com/">
+	                <iconify-icon class="iconos"
+	                icon="ic:outline-facebook"></iconify-icon>
+	            </a>
+	            <a href="https://www.instagram.com/">
+	                <iconify-icon class="iconos"
+	                icon="uim:instagram-alt"></iconify-icon>
+	            </a>
+	        </footer>
+	        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+	        <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+	        <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+	        <script src="./scripts/index.js"></script>
+          <script src="./funciones.js"></script>
+	<body>
+	</html>

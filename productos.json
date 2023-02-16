@@ -1,0 +1,31 @@
+[
+    { 
+    id: 1, 
+    nombre: “Liverpool”, 
+    imagen:“./img”, 
+    precio: 1500, 
+    Cantidad: 1
+    },
+    { 
+    id: 2, 
+    nombre: “River Plate”, 
+    imagen:“ ”, 
+    precio: 1400, 
+    Cantidad: 1
+    },
+    { 
+    id: 3, 
+    nombre: “Real Betis”, 
+    imagen:“ ”, 
+    precio: 1300, 
+    Cantidad: 1
+    },
+    { 
+    id: 4, 
+    nombre: “L.A Galaxy”, 
+    imagen:“ ”, 
+    precio: 1200, 
+    Cantidad: 1
+    }
+    ]
+    

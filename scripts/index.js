@@ -1,4 +1,4 @@
-let nombre = "Restaurante Aguilar";
+/*let nombre = "Restaurante Aguilar";
 console.log (nombre);
 
 const edad = 10;
