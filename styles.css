@@ -18,11 +18,13 @@
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: 0;
-
   border: 8px;
   border-style: solid;
   background-color: orange;
+}
 
+.navbar-toggler {
+  background-color: orange;
 }
 
 .Logo {
@@ -50,7 +52,7 @@ h2 {
   font-weight: bold;
 }
 
-.h3{
+.h3 {
   color: orange;
   background-color: aliceblue;
   text-align: center;
@@ -80,17 +82,6 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
-}
-
-.iconos {
-  background-color: orange;
-  font-size: 50px;
-}
-
-.carrito11 {
-  background-color: orange;
-  font-size: 50px;
-  position: absolute;
 }
 
 .tituloSeccionComidas {
@@ -156,12 +147,21 @@ main .contenedorGeneralBienvenida .contenedorImgTitulo .prueba a {
   background-color: orange;
   padding: 1rem;
   border-radius: 10px;
-  color: ;
   text-decoration: none;
 }
 
 
-/*Hover*/
+.iconos {
+  background-color: orange;
+  font-size: 50px;
+}
+
+.carrito11 {
+  background-color: orange;
+  font-size: 50px;
+  position: absolute;
+}
+
 .card:hover {
   border-color: #f80000;
   box-shadow: 0 12px 26px 0 #f80000;
@@ -182,7 +182,7 @@ main .contenedorGeneralBienvenida .contenedorImgTitulo .prueba a {
   color: #ffff;
   font-weight: bold;
   text-align: center;
-  }
+}
 
 
 .imgxd {
@@ -191,8 +191,6 @@ main .contenedorGeneralBienvenida .contenedorImgTitulo .prueba a {
   display: grid;
   place-items: center;
 }
-
-
 
 .form {
   width: 60em;
@@ -261,39 +259,38 @@ button:active {
 
 @media only screen and (min-width: 320px) and (max-width: 670px) {
   * {
-      background-color: #061e41;
+    background-color: #061e41;
   }
 
   .Logo {
     width: 10rem;
   }
+
   h2 {
-   
     font-size: 15px;
-   
   }
-  
-  .h3{
-   
-    font-size: 10px;
-    
+
+  .h3 {
+    font-size: 8px;
   }
-  
+
   p {
     font-size: 10px;
-   
   }
-  
-  
+
+  .carrito11 {
+    background-color: orange;
+    font-size: 25px;
+  }
+
   .iconos {
     font-size: 15px;
   }
 
   main .contenedorGeneralBienvenida .contenedorImgTitulo .tituloBienvenida span {
-    
     font-size: 30px;
   }
-  
+
   main .contenedorGeneralBienvenida .contenedorImgTitulo h2 {
     top: 10%;
     font-size: 10px;
@@ -302,7 +299,20 @@ button:active {
   #contenedorProductos {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 10px;
+  }
+
+  .card {
+    width: 8em;
+    height: 12.5em;
+  }
+
+  .card-title {
+    font-size: .5rem;
+  }
+
+  button {
+    font-size: 7px;
   }
 
   .form {
@@ -310,12 +320,10 @@ button:active {
     display: flex;
     margin-left: 40px;
     font-size: 10px;
+
   }
-  
+
   .form input {
     height: 10px;
-
   }
-
 }
-

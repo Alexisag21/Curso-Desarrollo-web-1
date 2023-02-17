@@ -1,24 +1,22 @@
-[/*
+[
     {
         "id": "13",
         "nombre": "Liverpool",
-        "imagen": "../img/Pr1.jpg",
+        "imagen": "./img/Pr1.jpg",
     },
     {
         "id": "14",
         "nombre": "River Platel",
-        "imagen": "../img/Pr2.jpg",
+        "imagen": "./img/Pr3.jpg",
     },
     {
         "id": "15",
         "nombre": "Real Betis",
-        "imagen": "../img/Pr3.jpg",
+        "imagen": "./img/Pr3.jpg",
     },
     {
         "id": "16",
         "nombre": "LA Galaxy",
-        "imagen": "../img/Pr4.jpg",
+        "imagen": "./img/Pr4.jpg",
     }
-                
- ]
-    
+]

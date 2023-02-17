@@ -1,4 +1,19 @@
+/*
+let nombreUsuario = prompt("Hola!, ¿cómo te llamas?");
+alert("Hola " + nombreUsuario + " " + "¿cómo estás?");
 
+let edadUsuario = parseInt(prompt("¿cuantos años tienes?"));
+alert(`Hola, ${nombreUsuario} tienes ${edadUsuario} años`);
+
+let visitasUsuario = parseInt(prompt("¿Cuantas veces nos has visitado?"));
+if (visitasUsuario <=3) { 
+    alert("Gracias por visitarnos.");
+} 
+
+let dia = 12;
+const suma= dia+visitasUsuario;
+alert("Tu numero de la suerte es el " + suma); */
+////////////////////////////////////////
 const contenedorProductos = document.getElementById("contenedorProductos");
 
 const camisetas = [
@@ -29,5 +44,55 @@ camisetas.forEach (item => {
     </div>
     `
 })
+/////////////////////////////////////////
+/*
+const camisetasFiltrado = camisetas.filter (item => item.precio > 1400);
+Console.log ("camisetas más caras", camisetasFiltrado);
 
+const camisetasFiltrado = comidas.filter (item => item.precio < 1300);
+Console.log ("camisetas más económicas", camisetasFiltrado);
+
+
+
+const ordenAlfabetico = camisetas.sort ((item1,item2)=> {
+If (item1.nombre === item2.nombre) {
+return 0
+} else if (item1.nombre < item2.nombre) {
+return -1;
+} else {
+return 1
+}
+});
+*/
 ///////////////////////////////////////////////////////////////////
+const botonAPI = document.getElementById("botonAPI"); 
+const ContenedorProductosNuevos = document.getElementById("ContenedorProductosNuevos"); 
+
+botonAPI.addEventListener("click", ( )=> {
+    llamarAPI();
+})
+
+const llamarAPI = () => {
+    fetch("productos.json")
+        .then(informacion => informacion.json())
+        .then(productos => productos.forEach(productos => {
+            ContenedorProductosNuevos.innerHTML +=
+            ` 
+            <div class= "card" style:"width: 18rem;">  
+            <img src="${item.imagen}" class="imgxd" alt="${item.nombre}">
+            <div class="card-body">
+            <h3 class="card-title">${item.nombre}</h3>
+            </div>
+                </div>
+                `
+        }))
+}
+/////////////////////////////////////
+Document.querySelector("form")
+   .addEventListener("Enviar datos" , e => {
+   e.preventDefault()
+   const data = Object.fromEntries (
+   new FormData(e.target)
+   )
+   alert(JSON.stringify(data))
+   })
