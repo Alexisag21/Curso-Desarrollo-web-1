@@ -1,0 +1,19 @@
+  #navbar {
+    display: flex;
+    gap: 1rem;
+    margin: 10px;
+    justify-content: end;
+    color: aliceblue;
+  }
+  
+  #navbar li {
+    border-radius: 8px;
+    flex: 1;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 0;
+  
+    border: 8px;
+    border-style: solid;
+    background-color: orange;
+  }

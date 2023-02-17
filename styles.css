@@ -1,6 +1,4 @@
 * {
-  margin: 0%;
-  padding: 0%;
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #000a0c;
@@ -27,6 +25,10 @@
 
 }
 
+.Logo {
+  width: 25rem;
+}
+
 h1 {
   color: #000a0c;
   background-color: orange;
@@ -39,13 +41,22 @@ h1 {
 
 
 h2 {
-  color: aliceblue;
-  font-size: 20px;
+  color: #000a0c;
+  background-color: orange;
+  border-color: #FFFFFF;
+  text-align: center;
+  font-size: 40px;
+  border-style: solid;
   font-weight: bold;
 }
 
-h3 {
-  font-size: 20px;
+.h3{
+  color: orange;
+  background-color: aliceblue;
+  text-align: center;
+  font-size: 15px;
+  border-style: solid;
+  font-weight: bold;
 }
 
 p {
@@ -65,39 +76,10 @@ a {
   font-weight: bold;
 }
 
-.text1 {
-  color: #000a0c;
-  background-color: aliceblue;
-  text-align: center;
-  font-size: 20px;
-  border-style: solid;
-  font-weight: bold;
-}
-
-.text2 {
-  color: #000a0c;
-  background-color: orange;
-  text-align: center;
-  font-size: 25px;
-  border-style: solid;
-  font-weight: bold;
-}
-
-.text3 {
-  color: #000a0c;
-  background-color: orange;
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.text4 {
-  color: #000a0c;
-  background-color: orange;
-  text-align: center;
-  font-size: 20 px;
-  border-style: solid;
-  font-weight: bold;
+#contenedorProductos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 .iconos {
@@ -140,7 +122,7 @@ main .contenedorGeneralBienvenida .contenedorImgTitulo .contenedorImgBienvenida 
 main .contenedorGeneralBienvenida .contenedorImgTitulo .tituloBienvenida {
   position: absolute;
   top: 30%;
-  color: #FFFFFF;
+  color: orange;
   text-align: center;
   width: 100%;
   font-size: 20px;
@@ -154,7 +136,7 @@ main .contenedorGeneralBienvenida .contenedorImgTitulo .tituloBienvenida span {
 main .contenedorGeneralBienvenida .contenedorImgTitulo h2 {
   position: absolute;
   top: 60%;
-  color: orange;
+  color: #000a0c;
   text-align: center;
   width: 100%;
   font-size: 20px;
@@ -163,7 +145,7 @@ main .contenedorGeneralBienvenida .contenedorImgTitulo h2 {
 main .contenedorGeneralBienvenida .contenedorImgTitulo .prueba {
   position: absolute;
   top: 80%;
-  color: #FFFFFF;
+  color: orange;
   text-align: center;
   width: 100%;
   font-size: 20px;
@@ -171,139 +153,12 @@ main .contenedorGeneralBienvenida .contenedorImgTitulo .prueba {
 }
 
 main .contenedorGeneralBienvenida .contenedorImgTitulo .prueba a {
-  background-color: #FFFFFF;
+  background-color: orange;
   padding: 1rem;
   border-radius: 10px;
   color: ;
   text-decoration: none;
 }
-
-#Carrusel{
-  width: 40rem;
-
-}
-
-
-.carousel-item {
-  width: 40rem;
-
-}
-
-#logo {
-  width: 40rem;
-  height: 50rem;
-}
-
-#mptP {
-  width: 100rem;
-  height: 50rem;
-}
-
-#moleIndex {
-  width: 10rem;
-  height: 15rem;
-}
-
-#pizzaIndex {
-  width: 10rem;
-  height: 15rem;
-}
-
-#chilesnIndex {
-  width: 10rem;
-  height: 15rem;
-}
-
-#pozoleIndex {
-  width: 10rem;
-  height: 15rem;
-}
-
-#sucursalCentro {
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-}
-
-#sucursalSur {
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-}
-
-@media only screen and (min-width: 320px) and (max-width: 670px) {
-  * {
-      background-color: #a6b6cc;
-  }
-  #logo {
-  width: 50rem;
-  height: 25rem;
-  }
-  .navbar {
-    flex-direction: column;
-  }
-  .navbar li {
-    flex-direction: column;
-  }
-  .card {
-    flex-wrap: nowrap;
-    flex-direction: column;
-    width: 9em;
-    height: 3.5em;
-    margin-left: 20px;
-    margin-block-end: 10px;
-  }
-
-
-  .form {
-    width: 15em;
-    justify-content: space-evenly;
-    margin-left: 50px;
-  }
-  
-
-
-}
-
-.card1 {
-
-  width: 550px;
-  height: 450px;
-  border-radius: 20px;
-  background: #f5f5f5;
-  position: relative;
-  padding: 1.8rem;
-  border: 2px solid #c3c6ce;
-  transition: 0.5s ease-out;
-  overflow: visible;
-  left: 650px;
-}
-
-.card-details {
-  color: black;
-  height: 100%;
-  gap: .5em;
-  display: grid;
-  place-content: center;
-}
-
-.card-button {
-  transform: translate(-50%, 125%);
-  width: 60%;
-  border-radius: 1rem;
-  border: none;
-  background-color: #f80000;
-  color: #fff;
-  font-size: 1rem;
-  padding: .5rem 1rem;
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  opacity: 0;
-  transition: 0.3s ease-out;
-}
-
-
 
 
 /*Hover*/
@@ -312,100 +167,35 @@ main .contenedorGeneralBienvenida .contenedorImgTitulo .prueba a {
   box-shadow: 0 12px 26px 0 #f80000;
 }
 
-.card:hover .card-button {
-  transform: translate(-50%, 50%);
-  opacity: 1;
-}
-
 .card {
   width: 13em;
   height: 18.5em;
   margin-left: 100px;
   margin-block-end: 50px;
-  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: all 120ms;
-  display: flex;
   align-items: center;
   justify-content: center;
-  background: orange;
-  border-color: #FFFFFF;
-  padding: 0.5em;
-  padding-bottom: 3.4em;
-  margin-block: 16px;
 }
 
-.card::after {
-  padding-top: 1.25em;
-  padding-left: 4em;
-  position: absolute;
-  left: 0;
-  bottom: -25px;
-  background-color: #000a0c;
-  color: #fff;
-  border-color: orange;
-  height: 2.5em;
-  width: 100%;
-  transition: all 80ms;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.card .title {
+.card-title {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  ;
-  color: #000a0c;
-  background-color: orange;
-  font-size: 0.9em;
-  position: absolute;
-  left: 0.625em;
-  bottom: 1.875em;
+  font-size: 1rem;
+  color: #ffff;
   font-weight: bold;
-}
+  text-align: center;
+  }
 
-.card .price {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  color: #000a0c;
-  background-color: orange;
-  font-size: 0.9em;
-  position: absolute;
-  left: 0.625em;
-  bottom: 0.625em;
-}
 
-.card:hover::after {
-  bottom: 0;
-}
-
-.card:active {
-  transform: scale(0.98);
-}
-
-.card:active::after {
-  content: "Added !";
-  height: 3.125em;
-}
-
-.text {
-  max-width: 55px;
-}
-
-.image {
+.imgxd {
   background: rgb(241, 241, 241);
-  width: 120%;
-  height: 115%;
+  width: 50%;
   display: grid;
   place-items: center;
 }
 
 
-* {
-  box-sizing: border-box;
-}
-
 
 .form {
-  width: 20em;
+  width: 60em;
   display: flex;
   margin-left: 350px;
   flex-direction: column;
@@ -453,6 +243,8 @@ button {
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
+  align-items: center;
+  justify-content: center;
 }
 
 button:hover {
@@ -466,11 +258,64 @@ button:active {
   transform: translateY(-1px);
 }
 
-.grid2 {
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-      minmax (
-        150px,
-        1fr)) 
+
+@media only screen and (min-width: 320px) and (max-width: 670px) {
+  * {
+      background-color: #061e41;
+  }
+
+  .Logo {
+    width: 10rem;
+  }
+  h2 {
+   
+    font-size: 15px;
+   
+  }
+  
+  .h3{
+   
+    font-size: 10px;
+    
+  }
+  
+  p {
+    font-size: 10px;
+   
+  }
+  
+  
+  .iconos {
+    font-size: 15px;
+  }
+
+  main .contenedorGeneralBienvenida .contenedorImgTitulo .tituloBienvenida span {
+    
+    font-size: 30px;
+  }
+  
+  main .contenedorGeneralBienvenida .contenedorImgTitulo h2 {
+    top: 10%;
+    font-size: 10px;
+  }
+
+  #contenedorProductos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .form {
+    width: 25em;
+    display: flex;
+    margin-left: 40px;
+    font-size: 10px;
+  }
+  
+  .form input {
+    height: 10px;
+
+  }
+
 }
+
