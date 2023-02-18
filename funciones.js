@@ -6,15 +6,20 @@ let edadUsuario = parseInt(prompt("¿cuantos años tienes?"));
 alert(`Hola, ${nombreUsuario} tienes ${edadUsuario} años`);
 
 let visitasUsuario = parseInt(prompt("¿Cuantas veces nos has visitado?"));
-if (visitasUsuario <=3) { 
+if (visitasUsuario <= 3) {
     alert("Gracias por visitarnos.");
-} 
+}
 
 let dia = 12;
-const suma= dia+visitasUsuario;
-alert("Tu numero de la suerte es el " + suma); 
+const suma = dia + visitasUsuario;
+alert("Tu numero de la suerte es el " + suma);
 ////////////////////////////////////////
+/*
 const contenedorProductos = document.getElementById("contenedorProductos");
+const contenidoCarrito = document.getElementById("contenidoCarrito");
+
+const carrito = [];
+*/
 
 const camisetas = [
     { id: 1, nombre: "Selección Mexicana", imagen: "../img/Mex1.jpg", precio: 1500, Cantidad: 1 },
@@ -44,6 +49,41 @@ camisetas.forEach(item => {
     </div>
     `
 })
+/*
+const agregarAlCarrito = (ProductoSeleccionado, carrito) => {
+    const ProductoSeleccionado = camisetas.find (camisetas => camiseta.id === ProductoSeleccionado)
+    carrito.push (ProductoSeleccionado)
+    console.log ("se agrego con exito", carrito)
+}
+
+const botonAgregarCarrito = document.getElementById ( ) ( `camisetas${item.id}`)
+ botonAgregarCarrito.addEventListener("click", () => {
+    agregarAlCarrito(item.id, carrito)
+ }
+ )
+
+const agregarContadorCarrito = () => {
+    if (carrito.length !== 0) {
+       contadorCarrito.classList.add("contadorCarrito");
+       contadorCarrito.textContent = carrito.lenght
+       }
+    }
+
+  const actualizarCarrito = () => {
+    contenidoCarrito.innerHTML = "";
+    carrito.forEach(comida => {
+        const div = document.createElement("div");
+        div.classList.add("productosenCarrito");
+        div.innerHTML =
+            `
+<P>${camisetas.cantidad}</p>
+<P>${camisetas.nombre}</p>
+<P>Precio: $${camisetas.precio}</p>
+`
+        contenidoCarrito, appendChild(div);
+    })
+}  
+ /* 
 /////////////////////////////////////////
 /*
 const camisetasFiltrado = camisetas.filter (item => item.precio > 1400);
